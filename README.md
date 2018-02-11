@@ -53,9 +53,6 @@ Check the configuration setting appending any missing parameters.
     staking=0
 
 
-Clone the Sentinel repo and install Python dependencies.    
-
-
 ### 2.b. remove old files
 Enter the wallet folder and stop the wallet
 
