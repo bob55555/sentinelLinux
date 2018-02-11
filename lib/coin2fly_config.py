@@ -31,7 +31,7 @@ class Coin2flyConfig():
         match = re.findall(r'rpc(user|password|port)=(.*?)$', data, re.MULTILINE)
 
         # python >= 2.7
-        creds = {key: value for (key, value) in match}
+        creds = {key: value.strip() for (key, value) in match}
 
         # standard Coin2fly defaults...
         default_port = 9998 if (network == 'mainnet') else 19998
