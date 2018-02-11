@@ -31,7 +31,7 @@ Make sure the local Coin2fly daemon running is at least version 12.1 (120100)
 
 Clone the Sentinel repo and install Python dependencies.
 
-    $ git clone https://github.com/coin2flyChain/sentinelLinux.git && cd sentinelLinux
+    $ git clone https://github.com/coin2fly/sentinel.git && cd sentinelLinux
     $ export LC_ALL=C
     $ virtualenv ./venv
     $ ./venv/bin/pip install -r requirements.txt
