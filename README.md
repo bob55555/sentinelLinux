@@ -56,24 +56,25 @@ Check the configuration setting appending any missing parameters.
 ### 2.b. remove old files
 Enter the wallet folder and stop the wallet
 
-    ./coin2fly-cli stop 
+    coin2fly-cli stop
     
 Enter the coin2fly config folder mentioned during the installation
-    
+
+    cd ~/.coin2flycore
     rm mncache.dat
     rm mnpayments.dat
     
 Enter the wallet folder and restart the wallet 
 
-    ./coin2flyd -daemon -reindex
+    coin2flyd -daemon -reindex
     
 Check the sync status
 
-    watch ./coin2fly-cli mnsync status
+    watch coin2fly-cli mnsync status
 
 As soon as you see the following response press CTRL+C
 
-    ./coin2fly-cli mnsync status
+    coin2fly-cli mnsync status
     {
     "AssetID": 999,
     "AssetName": "MASTERNODE_SYNC_FINISHED",
@@ -87,7 +88,7 @@ As soon as you see the following response press CTRL+C
 
 Finally start the masternode
 
-    ./coin2fly-cli masternode start
+    coin2fly-cli masternode start
 
 
 ### 3. Set up Cron
@@ -104,7 +105,7 @@ In the crontab editor, add the lines below, replacing '/home/YOURUSERNAME/sentin
 
 Test the config by runnings all tests from the sentinel folder you cloned into
 
-    $ ./venv/bin/py.test ./test
+    $ cd ~/sentinelLinux && ./venv/bin/py.test ./test
 
 With all tests passing and crontab setup, Sentinel will stay in sync with coin2flyd and the installation is complete
 
@@ -118,7 +119,7 @@ An alternative (non-default) path to the `coin2fly.conf` file can be specified i
 
 To view debug output, set the `SENTINEL_DEBUG` environment variable to anything non-zero, then run the script manually:
 
-    $ SENTINEL_DEBUG=1 ./venv/bin/python bin/sentinel.py
+    $ cd ~/sentinelLinux && SENTINEL_DEBUG=1 ./venv/bin/python bin/sentinel.py
 
 ## Contributing
 
