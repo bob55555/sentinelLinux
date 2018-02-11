@@ -47,26 +47,14 @@ parameters rpcuser and rpcpassword needs to be replaced
     listen=1
     server=1
     discover=1
-    rpcport=19470
+    rpcport=12228
     rpcthreads=8
     rpcallowip=127.0.0.1
     daemon=1
     listen=1
     server=1
     staking=0
-    discover=1
 
-    addnode=84.17.23.43:12875
-    addnode=18.220.138.90:12875
-    addnode=86.57.164.166:12875
-    addnode=86.57.164.146:12875
-    addnode=18.217.78.145:12875
-    addnode=23.92.30.230:12875
-    addnode=35.190.182.68:12875
-    addnode=80.209.236.4:12875
-    addnode=91.201.40.89:12875
-
-                          
 
 Clone the Sentinel repo and install Python dependencies.    
 
