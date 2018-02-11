@@ -37,10 +37,9 @@ Clone the Sentinel repo and install Python dependencies.
     $ ./venv/bin/pip install -r requirements.txt
     
 
-### 2.a. Check coin2fly.conf
+### 2.a. Check ~/.coin2flycore/coin2fly.conf
 
-Change the configuration checking, and appending if missing the following
-parameters rpcuser and rpcpassword needs to be replaced
+Check the configuration setting appending any missing parameters.
 
     rpcuser=<ADD A RANDOM STRING HERE>
     rpcpassword=<ADD A RANDOM STRING HERE>
@@ -51,8 +50,6 @@ parameters rpcuser and rpcpassword needs to be replaced
     rpcthreads=8
     rpcallowip=127.0.0.1
     daemon=1
-    listen=1
-    server=1
     staking=0
 
 
